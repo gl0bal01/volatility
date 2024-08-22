@@ -4,8 +4,9 @@
 
 [https://code.google.com/archive/p/volatility/wikis/CommandReference23.wiki#dumpfiles](https://code.google.com/archive/p/volatility/wikis/CommandReference23.wiki#dumpfiles)
 
-<aside>
-<img src="https://www.notion.so/icons/alien_gray.svg" alt="https://www.notion.so/icons/alien_gray.svg" width="40px" /> **Learn & test**
+
+
+## Learn & test ##
 
 [https://tryhackme.com/r/room/analysingvolatilememory](https://tryhackme.com/r/room/analysingvolatilememory)
 
@@ -13,13 +14,6 @@
 
 [https://hacktoria.com/](https://hacktoria.com/) (memory mystery)
 
-</aside>
-
----
-
-**TOC**
-
----
 
 ## Check pageFile.sys
 
