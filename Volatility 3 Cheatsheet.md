@@ -5,6 +5,9 @@
 [https://code.google.com/archive/p/volatility/wikis/CommandReference23.wiki#dumpfiles](https://code.google.com/archive/p/volatility/wikis/CommandReference23.wiki#dumpfiles)
 
 
+## Tools ##
+[Volatility Windows Analysis Script](https://github.com/gl0bal01/volatility-windows-analysis/)
+
 
 ## Learn & test ##
 
@@ -60,7 +63,7 @@ volatility3 -f <file> -o . windows.memmap.Memmap --pid 1640 --dump
 ## Dump file from offset
 
 ```powershell
-volatility3 -f <file> -o .  windows.dumpfiles --physaddr/virtaddr 0x3fc77360
+volatility3 -f <file> -o . windows.dumpfiles --physaddr/virtaddr 0x3fc77360
 ```
 
 ## Get  the full path of a suspicious PID 740
@@ -72,8 +75,8 @@ volatility3 -f <file> windows.dlllist|grep 740
 ## Get  the parent process
 
 ```python
-volatility3 -f Investigation-2.raw windows.pstree
-volatility3 -f Investigation-2.raw windows.psscan
+volatility3 -f <file> windows.pstree
+volatility3 -f <file> windows.psscan
 ```
 
 ## What DLL is loaded by a specific string/pid
@@ -114,14 +117,12 @@ volatility3 -f <file> windows.crashinfo.Crashinfo
 
 ```powershell
 volatility3 -f <file> windows.registry.hivelist
-
-volatility2 -f <file> --profile=<profile> dumpregistry -D .
 ```
 
 ## Dump the Registry Hives
 
 ```powershell
-volatility2 -e <file> imageinfo # to get the profile
+volatility2 -f <file> imageinfo # to get the profile
 volatility2 -f <file> --profile=<profile> dumpregistry -D .
 ```
 
